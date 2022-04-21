@@ -1,0 +1,9 @@
+.article {
+  border: 1px solid blue;
+  padding: 5px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: justify;
+  position: relative;
+  width: 50%;
+}

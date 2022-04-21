@@ -24,6 +24,18 @@ const Articles = () => {
               >
                 <p>
                   {article.topic}: {article.title} ({article.author})
+                  <p>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.location.href = `/article/${article.article_id}`;
+                      }}
+                    >
+                      {" "}
+                      Click here
+                    </button>
+                  </p>
                 </p>
               </li>
             );
