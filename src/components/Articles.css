@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Case1 {
+  border: 1px solid blue;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  position: relative;
+  width: 33.3%;
+}
+.Case2 {
+  border: 1px solid rgb(255, 0, 221);
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  position: relative;
+  width: 33.3%;
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+  .Case1 {
+    width: 90%;
+  }
+  .Case2 {
+    width: 90%;
+  }
+}
