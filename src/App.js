@@ -1,26 +1,24 @@
 import "./App.css";
-const cors = require("cors");
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./components/Home";
+import Articles from "./components/Articles";
+import Header from "./components/Header";
 
-App.use(cors());
-
-function App() {
+const App = () => {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <div className="App">
+      <BrowserRouter>
+        <Header />
+        <Nav />
+
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/articles" element={<Articles />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
-}
+};
 
 export default App;
