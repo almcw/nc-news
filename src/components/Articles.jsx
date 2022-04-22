@@ -40,7 +40,7 @@ const Articles = () => {
                       }}
                     >
                       {" "}
-                      Click here
+                      Click to read
                     </button>
                   </p>
                 </p>
